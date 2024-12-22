@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    margin: 50px 0;
+    padding: 0 0 30px 0;
+}
+#services{
+    padding-bottom: 30px;
+    text-align: center;
+}
+#services .heading{
+    padding-bottom: 30px;
+    text-align: center;
+}
+#services .heading h2{
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+#services .heading h2::before,
+          .heading h2::after{
+            content: "";
+            background-color: orange;
+            display: inline-block;
+            width: 50px;
+            height: 2px;
+          }
+#services .heading h2::before{
+    margin: 0 15px 10px 0;
+}          
+#services .heading h2::after{
+    margin: 0 0 10px 0;
+}
+#services .heading p{
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+#services .row .icon-box{
+    position: relative;
+    padding: 30px;
+    background-color: palegoldenrod
+    border-radius: 5px;
+    box-shadow: 0 0 30px 0 rgb(250, 189, 74);
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+#services .row .icon-box::before{
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: -40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    z-index: -1;
+    transition: all 0.3s;
+}
+#services .one::before{
+    background: orange;
+}
+#services .row .icon-box:hover::before{
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    
+}
+#services .row .icon{
+    margin: 0 auto 20px auto;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    background-color: palegoldenrod;
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+#services .row .icon i{
+    font-size: 38px;
+    line-height: 1.1;
+}
+#services .icon-box:hover .icon{
+    background: rgb(242, 90, 34);
+}
+#services .icon-box:hover .icon i{
+    color: white;
+}
+#services .row .title{
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    transition: 0.5s ease-in-out;
+}
